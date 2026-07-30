@@ -7,8 +7,8 @@ const resultText = document.getElementById('result');
 // form event listener
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    const numOneVal = numOneInput.value;
-    const numTwoVal = numTwoInput.value;
+    const numOneVal = Number(numOneInput.value);
+    const numTwoVal = Number(numTwoInput.value);
     
     // even though we put numbers into the input fields, they become strings in javascript
     console.log(`numOneVal is of type: ${typeof numOneVal}, with a value of ${numOneVal}`);
