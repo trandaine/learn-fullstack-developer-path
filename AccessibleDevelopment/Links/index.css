@@ -12,13 +12,31 @@ main {
 strong {
     color: #0907a4;
 }
-a {
+/* a {
     color: #0907a4;
     text-decoration: none;
     text-decoration-color: #d172cb;
+} */
+
+a {
+    color: #0907a4;
+    /* Requirement 1: Ensure links are identified by more than just color */
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #d172cb;
+    text-underline-offset: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-
+/* Add clear hover and focus states for better accessibility */
+a:hover, 
+a:focus {
+    color: #05036b;
+    background-color: #f7e6f5; /* Subtle highlight on hover/focus */
+    text-decoration-thickness: 3px;
+    outline: 2px solid #d172cb;
+    outline-offset: 2px;
+}
 
 /* Hero Section */
 .hero-section {
