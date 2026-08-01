@@ -15,20 +15,10 @@ main {
     width: 900px;
     margin: 0 auto;
 }
-
-/* Challenge 2: Ensure all links have an underline or distinct style */
 a {
     color: inherit;
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
+    text-decoration: none;
 }
-
-a:hover,
-a:focus {
-    text-decoration-thickness: 2px;
-}
-
 .icon {
     font-size: 32px;
 }
@@ -52,10 +42,6 @@ a:focus {
     margin: 5px;
     padding: 10px;
     font-size: 16px;
-    text-decoration: none; /* Optional override for pure button-like nav links */
-}
-.nav-link:hover {
-    text-decoration: underline;
 }
 .nav-links {
     display: flex;
@@ -94,13 +80,6 @@ a:focus {
     padding: 8px 20px;
     border-radius: 40px;
     width: 100px;
-    display: inline-block;
-    text-decoration: none; /* Styled as a button */
-    background-color: #f7f7f7;
-}
-.hero-link:hover {
-    background-color: #333333;
-    color: #ffffff;
 }
 
 /* Info Section */
@@ -117,7 +96,7 @@ a:focus {
 }
 .info a {
     color: #007000;
-    font-weight: 600;
+    text-decoration: underline;
 }
 .statistics {
     width: 620px;
@@ -136,7 +115,7 @@ a:focus {
     max-width: 200px;
 }
 .stat-heading {
-    color: #aaaaaa;
+    color: #cccccc;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 0;
@@ -180,13 +159,50 @@ a:focus {
     border: 2px solid #333333;
     padding: 8px 20px;
     border-radius: 40px;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #f7f7f7;
 }
-.about a:hover {
-    background-color: #333333;
-    color: #ffffff;
+
+/* Sign Up Form */
+.form-heading {
+    font-size: 48px;
+    margin: 0;
+}
+.form-intro {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.form-section {
+    margin: 120px auto;
+    width: 450px;
+    text-align: center;
+}
+.input {
+    display: block;
+    width: 300px;
+    margin: 5px auto 10px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: 2px solid #333333;
+	font-family: 'Poppins', sans-serif;
+}
+
+.input::placeholder {
+    color: #555555;
+    opacity: 1;
+}
+.input::-webkit-input-placeholder {
+    color: #aaaaaa;
+}
+.submit-button {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin: 10px auto 0;
+    width: 130px;
+	font-family: 'Poppins', sans-serif;
+}
+.submit-button:hover {
+    background-color: #dddddd;
+    cursor: pointer;
 }
 
 /* Footer */
@@ -213,8 +229,4 @@ a:focus {
 .social-link {
     display: flex;
     align-items: center;
-    text-decoration: none;
-}
-.social-link:hover {
-    text-decoration: underline;
 }
