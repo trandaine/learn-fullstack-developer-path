@@ -1,0 +1,14 @@
+{
+  "name": "Scrim-s011kp6",
+  "description": "https://scrimba.com/fullstack-path-c0fullstack/~0324/s0l83a1v6n/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
