@@ -15,10 +15,20 @@ main {
     width: 900px;
     margin: 0 auto;
 }
+
+/* Challenge 2: Ensure all links have an underline or distinct style */
 a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
 }
+
+a:hover,
+a:focus {
+    text-decoration-thickness: 2px;
+}
+
 .icon {
     font-size: 32px;
 }
@@ -42,6 +52,10 @@ a {
     margin: 5px;
     padding: 10px;
     font-size: 16px;
+    text-decoration: none; /* Optional override for pure button-like nav links */
+}
+.nav-link:hover {
+    text-decoration: underline;
 }
 .nav-links {
     display: flex;
@@ -80,6 +94,13 @@ a {
     padding: 8px 20px;
     border-radius: 40px;
     width: 100px;
+    display: inline-block;
+    text-decoration: none; /* Styled as a button */
+    background-color: #f7f7f7;
+}
+.hero-link:hover {
+    background-color: #333333;
+    color: #ffffff;
 }
 
 /* Info Section */
@@ -96,6 +117,7 @@ a {
 }
 .info a {
     color: #007000;
+    font-weight: 600;
 }
 .statistics {
     width: 620px;
@@ -158,6 +180,13 @@ a {
     border: 2px solid #333333;
     padding: 8px 20px;
     border-radius: 40px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #f7f7f7;
+}
+.about a:hover {
+    background-color: #333333;
+    color: #ffffff;
 }
 
 /* Footer */
@@ -184,10 +213,8 @@ a {
 .social-link {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
-
-/* 
-Challenges:
-1. Update our images so that they have appropriate alternative texts.
-2. Update any links that are either not recognizable as links or have ambiguous text.
-*/
+.social-link:hover {
+    text-decoration: underline;
+}
