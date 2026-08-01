@@ -184,13 +184,8 @@ a {
     border: 2px solid #333333;
 	font-family: 'Poppins', sans-serif;
 }
-
-.input::placeholder {
-    color: #555555;
-    opacity: 1;
-}
 .input::-webkit-input-placeholder {
-    color: #aaaaaa;
+    color: #555555;
 }
 .submit-button {
     border: 2px solid #333333;
