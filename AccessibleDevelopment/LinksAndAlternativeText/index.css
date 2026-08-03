@@ -200,6 +200,9 @@ a {
     cursor: pointer;
 }
 
+ul {
+    list-style-type: none;
+}
 /* Footer */
 .footer {
     background-color: #333333;
