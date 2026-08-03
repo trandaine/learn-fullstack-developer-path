@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333333;
+}
+
+body, .contact-input, .contact-textarea, .contact-submit-button {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Skip Link */
+.skip-nav-link {
+    position: absolute;
+    top: 10px;
+    left: -9999px;
+    z-index: 100;
+    background-color: #ffffff;
+    color: #333333;
+    border: 2px solid #333333;
+    padding: 0.5rem 1.25rem;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: underline;
+    transition: left 0.3s ease;
+}
+
+.skip-nav-link:focus {
+    left: 10px;
+    outline: 3px solid #007000;
+    outline-offset: 2px;
+}
+
+/* Layout */
+.contact-page {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contact-form-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.contact-form-wrapper {
+    flex: 1 1 320px;
+}
+
+.contact-image-wrapper {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Typography & Headings */
+.contact-form-heading {
+    font-size: 3rem; /* 48px */
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.contact-form-heading span {
+    color: #007000;
+}
+
+.contact-form-intro {
+    font-size: 1.25rem; /* 20px */
+    margin-bottom: 1.5rem;
+}
+
+/* Form Controls & Labels */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: #222222;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    border-radius: 12px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem; /* Prevents mobile browser auto-zoom */
+    border: 2px solid #333333;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.contact-textarea {
+    resize: vertical;
+}
+
+/* High Contrast Placeholders (4.5:1+) */
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: #595959;
+}
+
+/* Visible Keyboard Focus States */
+.contact-input:focus-visible,
+.contact-textarea:focus-visible,
+.contact-submit-button:focus-visible {
+    outline: 3px solid #007000;
+    outline-offset: 2px;
+}
+
+/* Submit Button */
+.contact-submit-button {
+    border: 2px solid #333333;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0.75rem 1.5rem;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-submit-button:hover {
+    background-color: #e6e6e6;
+}
+
+/* 
+Current issues:
+- Placeholder text has poor text contrast.
+- Missing alternative text for images.
+- Missing labels for input fields.
+- Ambiguous button text.
+- Semantic HTML is lacking.
+- Font-sizes are defined in px.
+
+Your final challenge: Use your new superpower to make our contact page accessible!🦸
+*/

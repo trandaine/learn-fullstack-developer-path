@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us - Skynet Eats</title>
+
+        <!-- Fonts & Icons -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="contact-page">
+        <!-- Skip to main content link for keyboard navigation -->
+        <a class="skip-nav-link" href="#main">Skip to main content</a>
+
+        <!-- Semantic Main Container -->
+        <main id="main">
+            <section class="contact-form-section">
+                <div class="contact-form-wrapper">
+                    <h1 class="contact-form-heading">Reach <span>Out</span></h1>
+                    <p class="contact-form-intro">
+                        Curious about something? Complete these fields and "get in touch", as you humans say. 
+                        <span role="img" aria-label="call me gesture">🤙</span>
+                    </p>
+
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="full-name">Full name</label>
+                            <input 
+                                class="contact-input" 
+                                id="full-name" 
+                                name="full-name" 
+                                type="text" 
+                                autocomplete="name"
+                                placeholder="e.g. Ariana Regular" 
+                                required 
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input 
+                                class="contact-input" 
+                                id="email" 
+                                name="email" 
+                                type="email" 
+                                autocomplete="email"
+                                placeholder="e.g. ariana.regular@gmail.com" 
+                                required 
+                            />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea 
+                                class="contact-textarea" 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                placeholder="Type your message here..." 
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button class="contact-submit-button" type="submit">
+                            Send Message <span role="img" aria-label="party popper">🎉</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact-image-wrapper">
+                    <!-- Decorative image properly hidden from screen readers -->
+                    <img class="contact-image" src="images/connect.png" alt="" aria-hidden="true" />
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
