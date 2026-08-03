@@ -1,0 +1,102 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #333333;
+}
+body, .contact-input, .contact-textarea  {
+    font-family: 'Poppins', sans-serif;
+}
+.contact-page {
+    min-height: 100vh;
+    max-width: 900px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.contact-form-section {
+    display: flex;
+    width: 800px;
+    padding: 30px;
+    margin: 0 auto;
+}
+.contact-image {
+    transform: rotate(90deg);
+    width: 900px;
+    margin-left: -60px;
+}
+.contact-form-heading {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+.contact-form-heading span {
+    color: #007000;
+}
+.contact-form-intro {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contact-input {
+    display: block;
+    width: 300px;
+    margin: 5px auto 15px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: 2px solid #333333;
+}
+.contact-textarea {
+    max-width: 300px;
+    margin: 5px auto 15px;
+    padding: 16px 20px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+}
+.contact-input::-webkit-input-placeholder, .contact-textarea::-webkit-input-placeholder {
+    color: #aaaaaa;
+}
+.contact-submit-button {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin: 10px auto 0;
+    width: 200px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-submit-button:hover {
+    background-color: #dddddd;
+}
+
+/* 
+Challenge: Identify all accessibility issues using all your newly aquired knowledge.
+
+Write them down here:
+Missing Document Language (<html lang="...">): The <html> tag lacks a lang attribute (e.g., lang="en"). Screen readers cannot automatically select the correct voice profile for pronunciation.
+
+Missing Page Title (<title>): There is no <title> inside <head>. Screen readers read the title first so users know which page they are visiting.
+
+Missing Semantic Landmarks (<main>): <div id="main"> is used instead of the native semantic element <main>. Screen readers rely on <main> to navigate directly to primary content.
+
+Skipped Heading Hierarchy (<h2> without <h1>): The heading starts at <h2> (.contact-form-heading). A page should always have a single <h1> before lower-level headings.
+
+Missing Form Labels (<label>): None of the inputs (Full name, Email, Your message...) have visible <label> tags or id pairings. Placeholders disappear when typed into and are not a replacement for labels.
+
+Incorrect Input Type (type="text" for Email): The email input uses type="text" instead of type="email". This prevents mobile devices from offering an optimized keyboard and prevents browser autofill.
+
+Placeholder Color Contrast (#aaaaaa): Light grey placeholder text on a white background yields a contrast ratio of roughly 2.3:1, failing the WCAG AA minimum requirement of 4.5:1.
+
+Inaccessible Submit Button (type="button"): <button type="button"> won't submit the form when pressing Enter while focused inside an input. Forms should either use <button type="submit"> or attach a proper onsubmit handler to the <form>.
+
+Missing Image Alternative Text (alt attribute): The <img> tag lacks an alt attribute. Screen readers will read the file path (images/connect.png). If decorative, it needs alt="".
+
+Image Rotation and Layout Distortion: The CSS applies transform: rotate(90deg) and a huge width: 900px with a negative margin (margin-left: -60px). This distorts the layout, risks causing accidental horizontal scrollbars, and breaks responsiveness.
+
+Fixed Layout Containers (width: 800px, max-width: 900px): Fixed pixel widths create severe horizontal scrolling issues for users who zoom in their text size to 200%+ or view on smaller devices.
+
+Fixed Font Units (px instead of rem): Font sizes (48px, 20px, 16px) are defined in px. Users who adjust their browser default font size settings will find that pixel-based text does not scale properly.
+
+Non-Semantic Introductory Text (<div>): The intro paragraph uses a generic <div> (.contact-form-intro) instead of a semantic <p> tag.
+
+Emoji Usage Without Text Equivalents: Emojis like 🤙 and 🎉 can be read literally or awkwardly by screen readers. Complex emojis should ideally be wrapped in <span role="img" aria-label="description"> if they convey meaningful context.
+*/
