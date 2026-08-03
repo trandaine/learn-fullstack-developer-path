@@ -102,12 +102,17 @@ main {
 
 /* Code for Skip Navigation Link goes here */
 .skip-nav-link {
+    border: 2px solid #333333;
+    padding: 8px 20px 8px 40px;
+    border-radius: 40px;
     position: absolute;
-    left: -200px;
+    left: -240px;
     top: 80px;
+    transition: 1s;
 }
 .skip-nav-link:focus {
-    left: 0;
+    left: -20px;
+    transition: 3s;
 }
 
 .auth-button {
@@ -146,12 +151,3 @@ body {
     margin-right: 6px;
 }
 
-/*
-
-Challenge:
-Add the three ARIA attributes that do the following:
-1. Define the role of the toggle switch
-2. Make the toggle switch keyboard-focusable
-3. Communicate the state to assistive technologies in some way (on/off)
-
-*/
