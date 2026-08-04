@@ -32,3 +32,16 @@ section{
 .main-image{
     width: 100%;
 }
+
+a{
+    color: #ef5839;
+    text-decoration: underline dotted;
+}
+
+a:hover{
+    color: #d4b44c;
+}
+
+a:active{
+    color: #d4b44c;
+}
