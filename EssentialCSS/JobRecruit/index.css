@@ -64,5 +64,13 @@ a{
 }
 
 
+section .ad-container #req-list ul li {
+    color: green; /*113*/
+}
+
+body section .ad-container div .general-list li{
+    color: red; /*24*/
+}
+
 
 
