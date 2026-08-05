@@ -1,19 +1,18 @@
+/* Base & Reset */
 
 body{
     font-size: 16px;
     color: #2b283a;
     font-family: 'Roboto', sans-serif;
+}
+
+body, h1, h3{
     margin: 0;
 }
 
-/* typography */
-
-h1, h3{
-    margin: 0;
-}
+/* Typography */
 
 h1{
-    color: whitesmoke;
     font-size: 36px;
 }
 
@@ -26,7 +25,17 @@ h3{
     font-size: 20px;
 }
 
-/* links */
+/* Colors & Backgrounds */
+
+h1, .section-two{
+    color: whitesmoke;
+}
+
+header, .section-two{
+    background-color: #5f29a3;
+}
+
+/* Links */
 
 a{
     color: #ef5839;
@@ -37,20 +46,12 @@ a:hover, a:active{
     color: #d4b44c;
 }
 
-/* layout */
+/* Layout & Components */
 
 header, 
 section, 
 footer{
     padding: 45px 0;
-}
-
-header, .section-two{
-    background-color: #5f29a3;
-}
-
-.section-two{
-    color: whitesmoke;
 }
 
 .container{
@@ -59,7 +60,7 @@ header, .section-two{
 }
 
 .main-image{
-    width:100%;
+    width: 100%;
 }
 
 .section-two-image-container{
@@ -76,12 +77,3 @@ footer{
     text-align: center;
     color: #5f29a3;
 }
-
-
-
-
-
-
-
-
-
