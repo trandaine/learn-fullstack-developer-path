@@ -50,3 +50,12 @@ a:active{
     width: 620px;
     margin: 0 auto;
 }
+
+section{
+    padding: 45px 0;
+}
+
+.section-two{
+    color: whitesmoke;
+    background-color: #5f29a3;
+}
