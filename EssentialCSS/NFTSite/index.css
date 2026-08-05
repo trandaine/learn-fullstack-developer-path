@@ -1,3 +1,4 @@
+
 body{
     font-size: 16px;
     color: #2b283a;
@@ -5,45 +6,51 @@ body{
     margin: 0;
 }
 
-header{
-    background-color: #5f29a3;
-    padding: 45px 0px;
+/* typography */
+
+h1, h3{
+    margin: 0;
 }
 
 h1{
     color: whitesmoke;
     font-size: 36px;
-    margin: 0;
 }
 
 h2{
     margin-top: 0;
 }
+
 h3{
     color: #d0aaff;
     font-size: 20px;
-    margin: 0;
 }
 
-section{
-    padding: 45px 0;
-}
-
-.main-image{
-    width: 100%;
-}
+/* links */
 
 a{
     color: #ef5839;
-    text-decoration: underline dotted;
+    text-decoration: underline dotted; 
 }
 
-a:hover{
+a:hover, a:active{
     color: #d4b44c;
 }
 
-a:active{
-    color: #d4b44c;
+/* layout */
+
+header, 
+section, 
+footer{
+    padding: 45px 0;
+}
+
+header, .section-two{
+    background-color: #5f29a3;
+}
+
+.section-two{
+    color: whitesmoke;
 }
 
 .container{
@@ -51,19 +58,8 @@ a:active{
     margin: 0 auto;
 }
 
-section{
-    padding: 45px 0;
-}
-
-.section-two{
-    color: whitesmoke;
-    background-color: #5f29a3;
-}
-
-
-.feature-image{
-    width: 300px;
-    border-radius: 4.6px;
+.main-image{
+    width:100%;
 }
 
 .section-two-image-container{
@@ -71,8 +67,21 @@ section{
     justify-content: space-between;
 }
 
+.feature-image{
+    width: 300px;
+    border-radius: 4.6px;
+}
+
 footer{
     text-align: center;
-    padding: 45px 0;
     color: #5f29a3;
 }
+
+
+
+
+
+
+
+
+
