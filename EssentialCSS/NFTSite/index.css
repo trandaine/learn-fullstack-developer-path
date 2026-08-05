@@ -68,5 +68,5 @@ section{
 
 .section-two-image-container{
     display: flex;
-    justify-content: spa
+    justify-content: space-between;
 }
