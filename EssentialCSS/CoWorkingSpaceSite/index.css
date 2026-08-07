@@ -57,3 +57,20 @@ Challenge:
     margin: 0 25px;
 }
 
+.item{
+    position: relative;
+    
+}
+.caption {
+    margin: 0 25px;
+}
+
+.img-banner {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+}
