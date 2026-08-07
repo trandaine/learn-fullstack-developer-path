@@ -78,7 +78,7 @@ button {
 }
 
 .chatbox-bg {
-     position: fixed;
+    position: fixed;
     bottom: 6px;
     right: 6px;
     background-color: #dda15e;
@@ -88,13 +88,10 @@ button {
     cursor: pointer;
     box-shadow: 1px 1px 5px #999;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /*some CSS here*/
 }
 
 .chatbox-img {
-
-   width: 50%; 
+    margin: auto;
+    width: 50%; 
 }
 
