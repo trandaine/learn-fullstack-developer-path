@@ -51,6 +51,7 @@ Challenge:
 
 .item-img {
     width: 100%;
+    display: block;
 }
 
 .caption {
