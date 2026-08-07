@@ -38,6 +38,17 @@ h1 {
     margin: 30px 25px;
 }
 
+.align-right {
+/* 
+Challenge:
+1. Add a line of CSS to position the menu 
+   icon at the right-hand end of the ul 
+   element. The logo and location pin should 
+   remain where they are.
+*/
+  margin: 0 0 0 auto;
+}
+
 .item-img {
     width: 100%;
 }
