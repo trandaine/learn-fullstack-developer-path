@@ -74,3 +74,20 @@ Challenge:
     color: whitesmoke;
     padding: 10px;
 }
+
+button {
+    border: none;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.caption {
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px; 
+}
