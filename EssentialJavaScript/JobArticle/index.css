@@ -138,6 +138,9 @@ input{
     border-radius: 3px;
 }
 
+.modal-choice-btns-reverse {
+    flex-direction: row-reverse;
+}
 /* modal after submit */
 
 .loading{
