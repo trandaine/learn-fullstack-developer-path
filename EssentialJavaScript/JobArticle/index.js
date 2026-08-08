@@ -13,6 +13,11 @@ modalCloseBtn.addEventListener('click', function () {
 
 consentForm.addEventListener('submit', function (e) {
     e.preventDefault()
+
+
+    const consentFormData = new FormData(consentForm)
+
+    console.log(consentFormData)
    
 
     modalText.innerHTML = `
