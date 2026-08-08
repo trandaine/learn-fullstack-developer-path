@@ -1,27 +1,28 @@
-/*
-Challenge:
-1. Take control of the close button.
-2. Use an event listener to set the display 
-   property of the modal to 'none' when the
-   close button is clicked.
-*/
-
 const modal = document.getElementById('modal')
-const modalButton = document.getElementById('modal-close-btn')
+const modalCloseBtn = document.getElementById('modal-close-btn')
+const consentForm = document.getElementById('consent-form')
+const modalText = document.getElementById('modal-text')
 
-modalButton.addEventListener('click', () => { 
-  modal.style.display = 'none'; 
-});
- 
-setTimeout(function(){
+setTimeout(function () {
     modal.style.display = 'inline'
 }, 1500)
 
-
-const consentForm = document.getElementById('consent-form') 
-
-consentForm.addEventListener('submit', function(e) {
-    e.preventDefault()
-    
-    console.log('form submitted')
+modalCloseBtn.addEventListener('click', function () {
+    modal.style.display = 'none'
 })
+
+consentForm.addEventListener('submit', function (e) {
+    e.preventDefault()
+   
+
+    modalText.innerHTML = `
+        <div class="modal-inner-loading">
+            <img src="images/loading.svg" class="loading">
+            <p id="uploadText">
+                Uploading your data to the dark web...
+            </p>
+        </div>
+    `
+})
+
+
