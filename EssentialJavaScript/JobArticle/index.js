@@ -16,3 +16,12 @@ modalButton.addEventListener('click', () => {
 setTimeout(function(){
     modal.style.display = 'inline'
 }, 1500)
+
+
+const consentForm = document.getElementById('consent-form') 
+
+consentForm.addEventListener('submit', function(e) {
+    e.preventDefault()
+    
+    console.log('form submitted')
+})
