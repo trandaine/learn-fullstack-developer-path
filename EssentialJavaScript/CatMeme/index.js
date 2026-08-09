@@ -189,7 +189,8 @@ Challenge:
         }
         
     }
-    console.log(emotionsArray)
+    // console.log(emotionsArray)
+    return emotionsArray
     
 }
 
