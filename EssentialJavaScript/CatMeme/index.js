@@ -196,11 +196,18 @@ Challenge:
 
 // getEmotionsArray(catsData)
 
-function renderEmotionsRadios(cats){
-    
-    const emotions = getEmotionsArray(cats)
-    console.log(emotions)
+const emotionRadios = document.getElementById('emotion-radios')
 
+function renderEmotionsRadios(cats){
+    const emotions = getEmotionsArray(cats)
+    // console.log(emotions)
+    let radioItems = ''
+    
+    for (let emotion of emotions){
+        radioItems += `<p>${emotion}</p>`
+    }
+    
+    emotionRadios.innerHTML = radioItems
 }
 
 renderEmotionsRadios(catsData)
