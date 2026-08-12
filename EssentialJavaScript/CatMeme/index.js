@@ -1,4 +1,4 @@
-import {catsData} from "./data.js"
+import { catsData } from "./data.js"
 
 const emotionRadios = document.getElementById('emotion-radios')
 
@@ -8,18 +8,24 @@ const emotionRadios = document.getElementById('emotion-radios')
 
 emotionRadios.addEventListener('change', highlightCheckedOption)
 
-function highlightCheckedOption(e){
-    document.getElementById(e.target.id).classList.add('highlight')
+function highlightCheckedOption(e) {
+    // document.getElementById(e.target.id).classList.add('highlight')
 
-    console.log(e.target.id)
+    // console.log(e.target.id)
+
+    const radiosArray = document.getElementsByClassName('radio')
+    for (let radio of radiosArray) {
+        radio.classList.remove('highlight')
+    }
+    document.getElementById(e.target.id).parentElement.classList.add('highlight')
 }
 
-function getEmotionsArray(cats){
+function getEmotionsArray(cats) {
 
     const emotionsArray = []
 
-    for (let cat of cats){
-        for (let emotion of cat.emotionTags){
+    for (let cat of cats) {
+        for (let emotion of cat.emotionTags) {
             // console.log(emotion)
 
             // Remove duplicates from the array
@@ -27,21 +33,21 @@ function getEmotionsArray(cats){
                 emotionsArray.push(emotion)
             }
         }
-        
+
     }
     // console.log(emotionsArray)
     return emotionsArray
-    
+
 }
 
 // getEmotionsArray(catsData)
 
 const emotionRadios = document.getElementById('emotion-radios')
 
-function renderEmotionsRadios(cats){
+function renderEmotionsRadios(cats) {
     let radioItems = ``
     const emotions = getEmotionsArray(cats)
-    for (let emotion of emotions){
+    for (let emotion of emotions) {
         radioItems += `
             <div class="radio">
                 <label for="${emotion}">${emotion}</label>
