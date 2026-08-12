@@ -1,7 +1,7 @@
 import { catsData } from "./data.js"
 
 const emotionRadios = document.getElementById('emotion-radios')
-
+const gifsOnlyOption = document.getElementById('gifs-only-option')
 const getImageBtn = document.getElementById('get-image-btn')
 
 
@@ -14,6 +14,9 @@ emotionRadios.addEventListener('change', highlightCheckedOption)
 
 
 function getMatchingCatsArray(){
+
+    const isGif = gifsOnlyOption.checked
+    console.log(isGif)
 
     // Add operation logic to prevent the function from running if no radio button is selected
     if (document.querySelector('input[type="radio"]:checked')) {
