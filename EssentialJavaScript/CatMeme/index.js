@@ -14,8 +14,12 @@ emotionRadios.addEventListener('change', highlightCheckedOption)
 
 
 function getMatchingCatsArray(){
-    const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
-    console.log(selectedEmotion)
+
+    // Add operation logic to prevent the function from running if no radio button is selected
+    if (document.querySelector('input[type="radio"]:checked')) {
+        const selectedEmotion = document.querySelector('input[type="radio"]:checked').value
+        console.log(selectedEmotion)
+    }
 }
 
 function highlightCheckedOption(e) {
