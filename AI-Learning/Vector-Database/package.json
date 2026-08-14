@@ -8,9 +8,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@supabase/supabase-js": "2.38.0",
+    "@supabase/supabase-js": "^2.38.0",
     "openai": "4.12.1",
     "vite": "latest"
-  },
-  "devDependencies": {}
+  }
 }
