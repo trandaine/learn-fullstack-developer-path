@@ -1,0 +1,1 @@
+run the code with command `npm run start` or `node --env-file=.env index.js` to ensure the environment variables are loaded correctly.
